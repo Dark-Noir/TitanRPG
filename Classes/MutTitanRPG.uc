@@ -354,6 +354,7 @@ function string GetInventoryClassOverride(string InventoryClassName)
 
 function bool CheckReplacement(Actor Other, out byte bSuperRelevant)
 {
+	local FakeMonsterWeapon fake;
 	local int i;
 	local WeaponLocker Locker;
     local RPGWeaponModifier WM;
@@ -383,6 +384,8 @@ function bool CheckReplacement(Actor Other, out byte bSuperRelevant)
 	{
 		if(Other.IsA('Monster'))
 		{
+			fake = spawn(class'FakeMonsterWeapon',Other,,,rot(0,0,0));
+			fake.GiveTo(Pawn(Other));
 			Pawn(Other).HealthMax = Pawn(Other).Health; //fix, e.g. to allow healing properly
 		}
 	

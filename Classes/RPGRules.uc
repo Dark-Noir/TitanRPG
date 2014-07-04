@@ -478,7 +478,7 @@ function float GetDamageEXP(int Damage, Pawn InstigatedBy, Pawn Injured)
 	}
 	
 	if(Injured.IsA('Monster'))
-		return RPGMut.GameSettings.ExpForDamageScale * (float(Damage) / Injured.HealthMax) * float(Monster(Injured).ScoringValue);
+		return RPGMut.GameSettings.ExpForDamageScale * (float(Damage) / Injured.HealthMax);
 	
 	return 0;
 }
