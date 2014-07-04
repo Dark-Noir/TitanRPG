@@ -1,5 +1,15 @@
-TitanRPG
+My Changes
 ========
+This modified version of TitanRPG is for InvasionX. 
+
+It needs the mutator "VehicleInvasion-116" loaded for work properly ! 
+
+The included TitanRPG.ini configuration file is modified for various weapon mutators, please use the vanilla *.ini when you dont have this mutators on your Server !
+
+Too use this version of TitanRPG please rename it, instructions are below. 
+
+TitanRPG
+-------
 TitanRPG is a complete standalone roleplaying game mutator for Unreal Tournament 2004 based on ideas introduced in UT2004RPG and DruidsRPG.
 
 Building
