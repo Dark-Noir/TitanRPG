@@ -253,13 +253,14 @@ defaultproperties
 	Categories(1)=class'AbilityCategory_Health'
     Categories(2)=class'AbilityCategory_Adrenaline'
 	Categories(3)=class'AbilityCategory_Weapons'
-    Categories(4)=class'AbilityCategory_Artifacts'
-	Categories(5)=class'AbilityCategory_Movement'
-    Categories(6)=class'AbilityCategory_Vehicles'
-	Categories(7)=class'AbilityCategory_Medic'
-	Categories(8)=class'AbilityCategory_Monsters'
-	Categories(9)=class'AbilityCategory_Engineer'
-	Categories(10)=class'AbilityCategory_Misc'
+	Categories(4)=class'AbilityCategory_ExtraWeapons'
+    Categories(5)=class'AbilityCategory_Artifacts'
+	Categories(6)=class'AbilityCategory_Movement'
+    Categories(7)=class'AbilityCategory_Vehicles'
+	Categories(8)=class'AbilityCategory_Medic'
+	Categories(9)=class'AbilityCategory_Monsters'
+	Categories(10)=class'AbilityCategory_Engineer'
+	Categories(11)=class'AbilityCategory_Misc'
 
 	Text_StatsAvailable="Available Stat Points:"
 	Text_Buy="Buy"

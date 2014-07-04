@@ -42,10 +42,7 @@ function Timer()
 	RegenPossible = MaxShieldPerLevel * AbilityLevel - NewShield;
 	if(RegenPossible > 0 && ElapsedNoDamage > NoDamageDelay)
 	{
-		AmountToAdd = int(BonusPerLevel) * AbilityLevel;
-
-		if(AmountToAdd >= 1)
-			Instigator.AddShieldStrength(Min(AmountToAdd, RegenPossible));
+		Instigator.AddShieldStrength(Min(1, RegenPossible));
 	} 
 
 	LastHealth = NewHealth;
@@ -65,7 +62,7 @@ defaultproperties
 	NoDamageDelay=1
 	BonusPerLevel=1
 	AbilityName="Shield Regeneration"
-	Description="Regenerates $1 shield per level per second up to $2 times the level, provided you haven't suffered damage recently."
+	Description="Regenerates 1 shield per second up to two times per level, provided you haven't suffered damage recently."
 	MaxLevel=6
 	StartingCost=5
 	CostAddPerLevel=5

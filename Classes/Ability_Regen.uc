@@ -5,7 +5,7 @@ var config float RegenInterval;
 function ModifyPawn(Pawn Other)
 {
 	Super.ModifyPawn(Other);
-	SetTimer(RegenInterval, true);
+	SetTimer(25 - (AbilityLevel / 4), true);
 }
 
 function Timer()
@@ -16,7 +16,7 @@ function Timer()
 		return;
 	}
 	
-	Instigator.GiveHealth(int(BonusPerLevel) * AbilityLevel, Instigator.HealthMax);
+	Instigator.GiveHealth(int(BonusPerLevel), Instigator.HealthMax);
 }
 
 //TODO: Dynamic description
@@ -27,7 +27,7 @@ defaultproperties
 	RegenInterval=1.000000
 
 	AbilityName="Regeneration"
-	Description="Heals 1 health per second per level.|Does not heal past starting health amount."
+	Description="Heals 1 health every 25 seconds, per level it regenerates 0.25 seconds faster.|Does not heal past starting health amount."
 	StartingCost=5
 	CostAddPerLevel=5
 	MaxLevel=6
